@@ -1,0 +1,131 @@
+@import url('fonts/fonts.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mask{
+    background: url(assets/background.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    display: flex;
+    padding: 25px 3vw;
+    background: #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.menu__logo{
+    height: 45px;
+}
+.menu__link{
+    margin: 0 .6vw;
+    color: #f2f2f2;
+    font-family: "Raleway-Light";
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.banner{
+    height: calc(100vh - 99px);
+    background: url(assets/banner.png) center no-repeat;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner__text{
+    width: 40vw;
+    height: 15vw;
+    font-family: "Raleway-Medium";
+    font-size: 7.2vw;
+    color: #f2f2f2;
+    text-shadow: 5px 5px 5px #0f0f0f;
+}
+.typewrite > .wrap { 
+    border-right: 0.05em solid; 
+    animation: caret 1s steps(1) infinite;
+}
+
+.container{
+    background: url(assets/background.png);
+    background-size: cover;
+}
+.container__header{
+    position: relative;
+    padding: 25px 3vw;
+    background: linear-gradient(135deg,#0f0f0f 50%, #888 50%);
+    z-index: 50;
+}
+.container__title{
+    font-family: "Raleway-Medium";
+    color: #f2f2f2;
+    font-size: 56px;
+}
+.container__box{
+    padding: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.validate{
+    padding: 3vw 5vw;
+    display: flex;
+    justify-content: center;
+}
+.validate__box{
+    width: 30vw;
+    margin: 2vw;
+    padding: 2vw 5vw;
+    background: rgba(126, 126, 126, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.validate__icon{
+    width: 25vw;
+    height: 25vw;
+    background: #a8a8a8;
+    border: 4vw solid #8a8a8b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.validate__icon .fas{
+    font-size: 12vw;
+    color: #234a71;
+}
+.validate__title{
+    font-family: "Raleway-Medium";
+    color: #c8c8c8;
+}
+.validate__text{
+    font-family: "Raleway-Light";
+    color: #c8c8c8;
+}
+
+
+
+.client{
+    width: 25vw;
+    height: 25vw;
+}
+.client img{
+    width: 100%;
+    height: 100%;
+}
