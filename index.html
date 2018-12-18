@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GamerTrials</title>
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="menu">
@@ -33,10 +34,10 @@
                 </span> 
             </h1>
         </section>
-        <section class="container" id="validate">
-            <div class="container__header">
+        <section class="caixa" id="validate">
+            <div class="caixa__header">
                 <div class="mask"></div>
-                <h2 class="container__title">Valide seu jogo</h2>
+                <h2 class="caixa__title">Valide seu jogo</h2>
             </div>
             <div class="validate">
                 <div class="validate__box">
@@ -45,7 +46,9 @@
                     </div>
                     <h3 class="validate__title">Online</h3>
                     <p class="validate__text">Aqui na GamerTrials você pode montar uma campanha para testar o seu game! Pode ser relacionada à um MVP, uma feature, uma fase, um modo. Você escolhe!</p>
-                    <button class="validate__button">Mais informações</button>
+                    <button type="button" class="validate__button" data-toggle="modal" data-target="#onlineModal">
+                        Mais informações
+                    </button>
                 </div>
                 <div class="validate__box">
                     <div class="validate__icon">
@@ -53,16 +56,92 @@
                     </div>
                     <h3 class="validate__title">Presencial</h3>
                     <p class="validate__text">Nós organizamos um evento com o seu jogo e chamamos os testers para darem feedback, responderem um formulário e muito mais.</p>
-                    <button class="validate__button">Mais informações</button>
+                    <button type="button" class="validate__button" data-toggle="modal" data-target="#presencialModal">
+                        Mais informações
+                    </button>
+                </div>
+            </div>
+            <div class="modal fade" id="onlineModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Serviços Online</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="accordion" id="accordionPresencial">
+                                <div class="modal__services">
+                                <a class="modal__service" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Teste de UX
+                                </a>
+                                <a class="modal__service" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Teste de QA
+                                </a>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionPresencial">
+                                    <div class="card-body">
+                                        É um teste de usabilidade. Descubra se o seu site, aplicativo ou protótipo está fácil de usar ou fácil de entender. Mandaremos o seu teste para nossa base de participantes com perfis variados. Eles vão gravar um vídeo com a navegação na tela, a webcam (ou câmera frontal do celular) e o áudio. Após a publicação, os resultados ficam prontos em 2 a 5 dias úteis (depende do perfil que você selecionou).                                 
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionPresencial">
+                                    <div class="card-body">
+                                        É um teste para descobrir bugs, problemas técnicos. Mandaremos o seu teste para gamers e Devs com experiência em desenvolvimento profissional de jogos digitais. Eles vão testar seu jogo mobile, navegador web ou PC em diversos navegadores e dispositivos para descobrir se está de acordo com o planejado ou não. Como resultado, você recebe comentários por escrito e prints de tela que demonstram os problemas encontrados. Após a publicação, os resultados ficam prontos em até 1 dia útil.                                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="contact.html" class="validate__button">Entre em contato</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="presencialModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Serviços Presenciais</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="accordion" id="accordionExample">
+                                <div class="modal__services">
+                                <a class="modal__service" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Play Teste
+                                </a>
+                                <a class="modal__service" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Evento B2C
+                                </a>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        É um teste de usabilidade com ambiente preparado e público selecionado. Vamos convidar testadores, buscando sempre o público alvo de seu jogo, para que consiga analisar o gameplay acontecendo na sua frente, sem interrupções.Além de ser uma das melhores formas de encontrar problemas inesperados, vamos te auxiliar na elaboração de questionários específicos para seus objetivos, em cada play teste. 
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        É uma ferramenta capaz de receber feedbacks valiosos, em menos de 1 minuto, em eventos para o público consumidor final. Como resultado, você vai entender melhor qual é o público alvo do seu jogo e quais são os principais diferenciais que deve investir. Além disso, você será capaz de entrar em contato novamente com as pessoas que realmente se interessaram pelo seu projeto.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="contact.html" class="validate__button">Entre em contato</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="container" id="about">
-            <div class="container__header">
+        <section class="caixa" id="about">
+            <div class="caixa__header">
                 <div class="mask"></div>
-                <h2 class="container__title">Quem somos</h2>
+                <h2 class="caixa__title">Quem somos</h2>
             </div>
-            <div class="container__box">
+            <div class="caixa__box">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/s7-W5EkaSks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p class="about__text">
                         A GamerTrials é uma plataforma de conexão entre o desenvolvedor independente e o jogador. Somos um espaço onde o jogador ajuda o desenvolvedor a transformar o seu sonho em um jogo completo. Colaboração e recompensas são a nossa realidade.
@@ -72,12 +151,12 @@
                 </p>
             </div>
         </section>
-        <section class="container" id="team">
-            <div class="container__header">
+        <section class="caixa" id="team">
+            <div class="caixa__header">
                 <div class="mask"></div>
-                <h2 class="container__title">Nosso time</h2>
+                <h2 class="caixa__title">Nosso time</h2>
             </div>
-            <div class="container__box">
+            <div class="caixa__box">
                     <div class="team__box">
                         <img class="team__img" src="assets/team/ian.jpg"/>
                         <h3 class="team__title">Ian Rochlin</h3>
@@ -116,12 +195,12 @@
                     </div>
                 </div>
         </section>
-        <section class="container" id="client">
-            <div class="container__header">
+        <section class="caixa" id="client">
+            <div class="caixa__header">
                 <div class="mask"></div>
-                <h2 class="container__title">Nossos clientes</h2>
+                <h2 class="caixa__title">Nossos clientes</h2>
             </div>
-            <div class="container__box">
+            <div class="caixa__box">
                 <div class="client">
                     <img src="assets/client/madmimic.jpg" alt="Logo Mad Mimic" />
                 </div>
@@ -157,11 +236,13 @@
     </main>
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.js"></script>
-    <!-- Scroll -->
-    <script type="text/javascript" src="js/scroll.js"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- Type Effect -->
     <script type="text/javascript" src="js/typeeffect.js"></script>
-    <!-- Magnific Popup core JS file -->
-    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    <!-- Scroll -->
+    <script type="text/javascript" src="js/scroll.js"></script>
 </body>
 </html>
