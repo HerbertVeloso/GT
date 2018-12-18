@@ -18,30 +18,40 @@
     z-index: -1;
 }
 
+/* MENU */
 .menu{
     position: sticky;
     top: 0;
     display: flex;
-    padding: 25px 3vw;
-    background: #0f0f0f;
+    padding: 20px 3vw;
+    background: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 .menu__logo{
-    height: 45px;
+    height: 40px;
 }
 .menu__link{
     margin: 0 .6vw;
     color: #f2f2f2;
     font-family: "Raleway-Light";
-    font-size: 18px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.menu__link:hover{
+    color: #FFF;
+    font-weight: bold;
     text-decoration: none;
 }
 
+
+
+
+/* BANNER */
 .banner{
-    height: calc(100vh - 99px);
+    height: calc(100vh - 80px);
     background: url(assets/banner.png) center no-repeat;
     background-size: cover; 
     display: flex;
@@ -49,35 +59,38 @@
     align-items: center;
 }
 .banner__text{
-    width: 40vw;
-    height: 15vw;
+    /* width: 60vw;
+    height: 15vw; */
     font-family: "Raleway-Medium";
-    font-size: 7.2vw;
+    font-size: 6vw;
     color: #f2f2f2;
-    text-shadow: 5px 5px 5px #0f0f0f;
+    text-shadow: .5vw .5vw 1vw #000;
+    display: flex;
 }
 .typewrite > .wrap { 
     border-right: 0.05em solid; 
     animation: caret 1s steps(1) infinite;
 }
 
+
+/* SECTIONS GERAIS */
 .caixa{
     background: url(assets/background.png);
     background-size: cover;
 }
 .caixa__header{
     position: relative;
-    padding: 25px 3vw;
+    padding: 20px 3vw;
     background: linear-gradient(135deg,#0f0f0f 50%, #888 50%);
     z-index: 50;
 }
 .caixa__title{
     font-family: "Raleway-Medium";
     color: #f2f2f2;
-    font-size: 56px;
+    font-size: 48px;
 }
 .caixa__box{
-    padding: 5vw;
+    padding: 5vw 5vw 8vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -85,44 +98,52 @@
 }
 
 
+
+/* VALIDE SEU JOGO */
 .validate{
     padding: 3vw 5vw;
     display: flex;
     justify-content: center;
 }
 .validate__box{
-    width: 30vw;
-    margin: 2vw;
-    padding: 2vw 5vw;
-    background: rgba(126, 126, 126, .6);
+    width: 33vw;
+    margin: 5vw;
+    padding: 3vw 5vw;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.validate__info{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .validate__icon{
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     background: #a8a8a8;
-    border: 4vw solid #8a8a8b;
+    border: 2.5vw solid #8a8a8b;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .validate__icon .fas{
-    font-size: 12vw;
+    font-size: 10vw;
     color: #234a71;
 }
 .validate__title{
     margin: 1vw 0;
     font-family: "Raleway-Medium";
     font-size: 2.5vw;
-    color: #c8c8c8;
+    color: #333438;
 }
 .validate__text{
     font-family: "Raleway-Light";
     font-size: 1.5vw;
-    color: #c8c8c8;
+    color: #333438;
     text-align: center;
 }
 .validate__button{
@@ -145,21 +166,29 @@
 }
 
 
+
+
+
+ /* QUEM SOMOS */
+.about__video{
+    width: 70vw;
+    height: 39.375vw;
+    margin-bottom: 5vw;
+}
 .about__text{
-    margin: 1vw 0;
+    margin-bottom: 2.5vw;
     font-family: "Raleway-Light";
-    font-size: 1.5vw;
+    font-size: 2.2vw;
     text-align: center;
 }
 
-
+/* NOSSA EQUIPE */
 .team__box{
-    width: 25vw;
-    margin: 2vw;
+    width: 22vw;
+    margin: 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Raleway-Light"
 }
 .team__img{
     width: 80%;
@@ -167,27 +196,29 @@
 }
 .team__title{
     margin: 1vw 0;
-    font-size: 2.8vw;
+    font-family: "Raleway-Medium";
+    font-size: 2.5vw;
 }
 .team__subtitle{
-    font-size: 2vw;
+    font-family: "Raleway-Light";
+    font-size: 1.5vw;
 }
 .team__text{
     margin: 1vw 0;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     text-align: center;
 }
 
 
 
-
+/* NOSSOS CLIENTES */
 .client{
-    width: 20vw;
-    height: 20vw;
-    margin: 2.5vw;
+    width: 18vw;
+    height: 18vw;
+    margin: 3.5vw;
 }
 .client--large{
-    width: 30vw;
+    width: 25vw;
 }
 .client--medium{
     width: 15vw;
@@ -215,10 +246,21 @@
     height: 10vw;
     margin: 0 2vw;
     padding: 1vw;
-    background: #000000;
+    background: #333438;
+    color: #FFF !important;
+    font-family: "Raleway-Medium";
     font-size: 2.5vw;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
+    box-shadow: .1vw .3vw 0 #656568;
+    transition: .5s all;
+}
+.modal__service:hover{
+    background: #656568;
+    text-decoration: none;
+    color: #FFF;
+    box-shadow: .1vw .3vw 0 #333438;
 }
 .card-body{
     text-align: center;
@@ -226,4 +268,72 @@
 .modal-footer{
     display: flex;
     justify-content: center;
+}
+
+
+.footer{
+    position: relative;
+    padding: 24px 3vw;
+    background: #000;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__text{
+    font-size: 20px;
+    color: #c8c8c8;
+}
+.social{
+    font-size: 28px;
+    color: #c8c8c8;
+    margin: 0 8px;
+}
+.social:hover{
+    font-weight: bolder;
+    color: #FFF;
+}
+
+
+
+
+/* FORM */
+.form__box{
+    width: 70vw;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .3);
+}
+.form__title{
+    margin-bottom: 2vw;
+    font-family: "Raleway-Medium";
+    font-size: 3vw;
+    color: #262626;
+}
+.form__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form__label{
+    margin: .8vw 0;
+    margin-right: 1vw;
+    font-family: "Raleway-Light";
+    font-size: 1.5vw;
+}
+.form__required{
+    color: #F00;
+    font-size: 3vw;
+    line-height: 0;
+    position: relative;
+    top: .8vw;
+}
+.form__input{
+    width: 100%;
+    margin-bottom: 1vw;
+    background: #fff;
+    padding: 12px;
+    font-family: "Raleway-Light";
+    font-size: 1vw;
 }

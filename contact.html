@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GamerTrials</title>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="mask"></div>
+        <a href="index.html">
+            <img class="menu__logo" src="assets/logo.svg" alt="Logo GamerTrials"/>
+        </a>
+        <nav>
+            <a class="menu__link" href="index.html#validate">Valide seu jogo</a>
+            <a class="menu__link" href="index.html#about">Quem somos</a>
+            <a class="menu__link" href="index.html#team">Nosso time</a>
+            <a class="menu__link" href="index.html#client">Nossos clientes</a>
+        </nav>
+    </header>
+    <main class="caixa">
+        <form class="caixa__box" action="https://formspree.io/pedro.teixeira@gamertrials.com" method="POST">
+            <div class="form__box">
+                <h1 class="form__title">Fale conosco!</h1>
+                <div class='form__item'>
+                    <label class="form__label" for="nome">Nome Completo:<span class="form__required">*</span></label>
+                    <input 
+                        id='nome'
+                        name='Nome'
+                        type='text' 
+                        class='form__input' 
+                        placeholder='Nome Sobrenome' 
+                        required 
+                    />
+                </div>
+                <div class='form__item'>
+                    <label class="form__label" for="email">E-mail:<span class="form__required">*</span></label>
+                    <input 
+                    id='email'
+                    name='Email'
+                    type='email' 
+                    class='form__input' 
+                    placeholder='email@exemplo.com' 
+                    required
+                    />
+                </div>
+                <div class='form__item'>
+                    <label class="form__label" for="whatsapp">Whatsapp:</label>
+                    <input 
+                        id='whatsapp'
+                        name='Whatsapp'
+                        type='text' 
+                        class='form__input' 
+                        placeholder='(99)9999-9999' 
+                    />
+                </div>
+                <div class='form__item'>
+                    <label class="form__label" for="empresa">Empresa:</label>
+                    <input 
+                        id='empresa'
+                        name='Empresa'
+                        type='text' 
+                        class='form__input'
+                    />
+                </div>
+                <div class='form__item'>
+                    <label class="form__label" for="profissao">Profissão:</label>
+                    <input 
+                        id='profissao'
+                        name='Profissão'
+                        type='text' 
+                        class='form__input'
+                    />
+                </div>
+                <div class='form__item'>
+                    <label class="form__label" for="assunto">Assunto:<span class="form__required">*</span></label>
+                    <input 
+                        id='assunto'
+                        name='Assunto'
+                        type='text' 
+                        class='form__input' 
+                        required
+                    />
+                </div>
+                <div class='form__item'>
+                    <label class="form__label" for="mensagem">Mensagem:<span class="form__required">*</span></label>
+                    <textarea class="form__input" id="mensagem" name="Mensagem" rows="6" required></textarea>
+                </div>
+                <input class="validate__button" type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="mask"></div>
+        <small class="footer__text">
+            © 2018 GamerTrials.
+        </small>
+        <section class="footer-social">
+            <a href="https://www.facebook.com/thegamertrials" target="_blank" class="social" title="Facebook"><span class="fab fa-facebook-f"></span></a>
+            <a href="https://twitter.com/gamertrials_" target="_blank" class="social" title="Twitter"><span class="fab fa-twitter"></span></a>
+        </section>
+    </footer>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Type Effect -->
+    <script type="text/javascript" src="js/typeeffect.js"></script>
+    <!-- Scroll -->
+    <script type="text/javascript" src="js/scroll.js"></script>
+</body>
+</html>
