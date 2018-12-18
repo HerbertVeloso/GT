@@ -8,6 +8,8 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
 </head>
 <body>
     <header class="menu">
@@ -16,10 +18,10 @@
             <img class="menu__logo" src="assets/logo.svg" alt="Logo GamerTrials"/>
         </a>
         <nav>
-            <a class="menu__link" href="#validate">Valide seu jogo</a>
-            <a class="menu__link" href="#">Quem somos</a>
-            <a class="menu__link" href="#">Nosso time</a>
-            <a class="menu__link" href="#">Nossos clientes</a>
+            <a class="menu__link scroll" href="#validate">Valide seu jogo</a>
+            <a class="menu__link scroll" href="#about">Quem somos</a>
+            <a class="menu__link scroll" href="#team">Nosso time</a>
+            <a class="menu__link scroll" href="#client">Nossos clientes</a>
         </nav>
     </header>
     <main>
@@ -34,7 +36,7 @@
         <section class="container" id="validate">
             <div class="container__header">
                 <div class="mask"></div>
-                <h2 class="container__title">Valide Seu Jogo</h2>
+                <h2 class="container__title">Valide seu jogo</h2>
             </div>
             <div class="validate">
                 <div class="validate__box">
@@ -55,105 +57,111 @@
                 </div>
             </div>
         </section>
-        <section class="container">
+        <section class="container" id="about">
             <div class="container__header">
                 <div class="mask"></div>
-                <h2 class="container__title">Quem Somos</h2>
+                <h2 class="container__title">Quem somos</h2>
             </div>
             <div class="container__box">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/s7-W5EkaSks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>
+                <p class="about__text">
                         A GamerTrials é uma plataforma de conexão entre o desenvolvedor independente e o jogador. Somos um espaço onde o jogador ajuda o desenvolvedor a transformar o seu sonho em um jogo completo. Colaboração e recompensas são a nossa realidade.
                 </p>
-                <p>
+                <p class="about__text">
                         Com o objetivo de transformar sonhos em jogos, a GamerTrials oferece as ferramentas ideais para isso. Use o nosso sistema de Quests para dar o seu feedback sobre o jogo. Faça ser possível ter um jogo mais completo através do Mercado de Ideias. GamerTrials, onde os jogadores podem ser heróis e onde os sonhos podem tomar forma.
                 </p>
             </div>
         </section>
-        <section class="container">
+        <section class="container" id="team">
             <div class="container__header">
                 <div class="mask"></div>
-                <h2 class="container__title">Nosso Time</h2>
+                <h2 class="container__title">Nosso time</h2>
             </div>
             <div class="container__box">
-                    <div class="col-sm-3 member-card">
-                        <img src="https://scontent.fsdu2-1.fna.fbcdn.net/v/t1.0-9/25659655_10156008660816972_2508094602611497265_n.jpg?_nc_cat=109&_nc_ht=scontent.fsdu2-1.fna&oh=2ebd03c368d986b1a84c8f1cbbe5b6ae&oe=5CAD1B38"/>
-                        <h3>Ian Rochlin</h3>
-                        <h6>CEO do Clã</h6>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
+                    <div class="team__box">
+                        <img class="team__img" src="assets/team/ian.jpg"/>
+                        <h3 class="team__title">Ian Rochlin</h3>
+                        <h6 class="team__subtitle">CEO do Clã</h6>
+                        <p class="team__text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
                     </div>
-                    <div class="col-sm-3 member-card">
-                        <img src="https://scontent.fsdu2-1.fna.fbcdn.net/v/t1.0-9/15171053_1166021773467516_5784978904659725384_n.jpg?_nc_cat=105&_nc_ht=scontent.fsdu2-1.fna&oh=a7705bb8a3038f05d316402b5efc2d48&oe=5C9A62E5"/>
-                        <h3>Gabriel Ferreira</h3>
-                        <h6>Guru do Marketing</h6>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
+                    <div class="team__box">
+                        <img class="team__img" src="assets/team/gabriel.jpg"/>
+                        <h3 class="team__title">Gabriel Ferreira</h3>
+                        <h6 class="team__subtitle">Guru do Marketing</h6>
+                        <p class="team__text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
                     </div>
-                    <div class="col-sm-3 member-card">
-                        <img src="https://scontent.fsdu2-2.fna.fbcdn.net/v/t1.0-9/20476210_1637774279567107_8642285407503527796_n.jpg?_nc_cat=108&_nc_ht=scontent.fsdu2-2.fna&oh=b484b637d047ab7ee98fc1149a018b55&oe=5C7017F2"/>
-                        <h3>Lucas Pessoa</h3>
-                        <h6>Mestre da Comunicação</h6>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
+                    <div class="team__box">
+                        <img class="team__img" src="assets/team/lucas.jpg"/>
+                        <h3 class="team__title">Lucas Pessoa</h3>
+                        <h6 class="team__subtitle">Mestre da Comunicação</h6>
+                        <p class="team__text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
                     </div>
-                    <div class="col-sm-3 member-card">
-                        <img src="img/team/pedro.png"/>
-                        <h3>Pedro Teixeira</h3>
-                        <h6>Cavaleiro dos Testes</h6>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
+                    <div class="team__box">
+                        <img class="team__img" src="assets/team/pedro.png"/>
+                        <h3 class="team__title">Pedro Teixeira</h3>
+                        <h6 class="team__subtitle">Cavaleiro dos Testes</h6>
+                        <p class="team__text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
                     </div>
-                    <div class="col-sm-3 member-card">
-                        <img src="https://scontent.fsdu2-2.fna.fbcdn.net/v/t1.0-9/21078320_10209497283821193_6244648465340054487_n.jpg?_nc_cat=110&_nc_ht=scontent.fsdu2-2.fna&oh=ea64dda067a3ebe0299637f48951a619&oe=5CA7CCC4"/>
-                        <h3>Anna Gianelli</h3>
-                        <h6>Designer do Polvo</h6>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
+                    <div class="team__box">
+                        <img class="team__img" src="https://scontent.fsdu2-2.fna.fbcdn.net/v/t1.0-9/21078320_10209497283821193_6244648465340054487_n.jpg?_nc_cat=110&_nc_ht=scontent.fsdu2-2.fna&oh=ea64dda067a3ebe0299637f48951a619&oe=5CA7CCC4"/>
+                        <h3 class="team__title">Anna Gianelli</h3>
+                        <h6 class="team__subtitle">Designer do Polvo</h6>
+                        <p class="team__text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
                     </div>
-                    <div class="col-sm-3 member-card">
-                        <img src="https://scontent.fsdu2-2.fna.fbcdn.net/v/t1.0-9/30724482_10212021055182956_4028412202451992576_n.jpg?_nc_cat=106&_nc_ht=scontent.fsdu2-2.fna&oh=2c96e3df115527a28e0b86fc9e0e9027&oe=5C65A834"/>
-                        <h3>René Abreu</h3>
-                        <h6>O cara dos códigos</h6>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
+                    <div class="team__box">
+                        <img class="team__img" src="assets/team/rene.jpg"/>
+                        <h3 class="team__title">René Abreu</h3>
+                        <h6 class="team__subtitle">O cara dos códigos</h6>
+                        <p class="team__text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Casamentiss faiz malandris se pirulitá.</p>
                     </div>
                 </div>
         </section>
-        <section class="container">
+        <section class="container" id="client">
             <div class="container__header">
                 <div class="mask"></div>
-                <h2 class="container__title">Nossos Clientes</h2>
+                <h2 class="container__title">Nossos clientes</h2>
             </div>
             <div class="container__box">
                 <div class="client">
-                    <img src="assets/madmimic.jpg" alt="" />
+                    <img src="assets/client/madmimic.jpg" alt="Logo Mad Mimic" />
                 </div>
                 <div class="client">
-                    <img src="assets/bitcake.png" alt="" />
+                    <img src="assets/client/bitcake.png" alt="Logo Bit Cake" />
                 </div>
                 <div class="client">
-                    <img src="assets/umizon.jpg" alt="" />
+                    <img src="assets/client/umizon.jpg" alt="Logo Umizon" />
                 </div>
                 <div class="client">
-                    <img src="assets/ambize.jpg" alt="" />
+                    <img src="assets/client/ambize.jpg" alt="Logo Ambize" />
                 </div>
                 <div class="client">
-                    <img src="assets/ludonauta.jpg" alt="" />
+                    <img src="assets/client/ludonauta.png" alt="Logo Ludo Nauta" />
                 </div>
                 <div class="client">
-                    <img src="assets/flux.png" alt="" />
+                    <img src="assets/client/flux.png" alt="Logo Flux" />
                 </div>
-                <div class="client">
-                    <img src="assets/puddleside.png" alt="" />
+                <div class="client client--large">
+                    <img src="assets/client/puddleside.png" alt="Logo Puddleside" />
                 </div>
-                <div class="client">
-                    <img src="assets/dumativa.jpg" alt="" />
+                <div class="client client--large">
+                    <img src="assets/client/dumativa.jpg" alt="Logo Dumativa" />
                 </div>
-                <div class="client">
-                    <img src="assets/doubledash.png" alt="" />
+                <div class="client client--large">
+                    <img src="assets/client/doubledash.png" alt="Logo Double Dash" />
                 </div>
-                <div class="client">
-                    <img src="assets/onanim.png" alt="" />
+                <div class="client client--medium">
+                    <img src="assets/client/onanim.png" alt="Logo Onanim" />
                 </div>
             </div>
         </section>
     </main>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Scroll -->
+    <script type="text/javascript" src="js/scroll.js"></script>
     <!-- Type Effect -->
     <script type="text/javascript" src="js/typeeffect.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
 </body>
 </html>

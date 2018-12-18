@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: none;
     box-sizing: border-box;
 }
 
@@ -13,7 +14,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .2;
+    opacity: .4;
+    z-index: -1;
 }
 
 .menu{
@@ -78,7 +80,8 @@
     padding: 5vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -111,19 +114,81 @@
     color: #234a71;
 }
 .validate__title{
+    margin: 1vw 0;
     font-family: "Raleway-Medium";
+    font-size: 2.5vw;
     color: #c8c8c8;
 }
 .validate__text{
     font-family: "Raleway-Light";
+    font-size: 1.5vw;
     color: #c8c8c8;
+    text-align: center;
+}
+.validate__button{
+    margin: 1vw 0;
+    padding: 1vw 2vw;
+    background: #333438;
+    color: #FFF;
+    font-family: "Raleway-Medium";
+    font-size: 1vw;
+    text-transform: uppercase;
+    box-shadow: .1vw .3vw 0 #656568;
+    transition: .5s all;
+}
+.validate__button:hover{
+    background: #656568;
+    box-shadow: .1vw .3vw 0 #333438;
+}
+
+
+.about__text{
+    margin: 1vw 0;
+    font-family: "Raleway-Light";
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+
+.team__box{
+    width: 25vw;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Raleway-Light"
+}
+.team__img{
+    width: 80%;
+    border-radius: 50%;
+}
+.team__title{
+    margin: 1vw 0;
+    font-size: 2.8vw;
+}
+.team__subtitle{
+    font-size: 2vw;
+}
+.team__text{
+    margin: 1vw 0;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 
 
+
 .client{
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
+    margin: 2.5vw;
+}
+.client--large{
+    width: 30vw;
+}
+.client--medium{
+    width: 15vw;
+    height: 20vw;
 }
 .client img{
     width: 100%;
