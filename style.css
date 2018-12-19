@@ -42,10 +42,58 @@
 }
 .menu__link:hover{
     color: #FFF;
-    font-weight: bold;
     text-decoration: none;
 }
-
+.menu__bars{
+    display: none;
+    font-size: 40px;
+    color: #f2f2f2;
+}
+@media (max-width: 1024px){
+    .menu__logo{
+        height: 36px;
+    }
+    .menu__link{
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px){
+    .menu__items{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        max-width: 100%;
+        transition: .5s all;
+        
+    }
+    .menu__link{
+        width: 100%;
+        margin: 0;
+        padding: 12px 24px;
+        background: #333438;
+        border-top: 2px solid #656568;
+        font-size: 22px;
+        text-align: center;
+    }
+    .menu__bars{
+        display: block;
+    }
+}
+@media (max-width: 480px){
+    .menu__logo{
+        height: 32px;
+    }
+    .menu__items{
+        top: 72px;
+        width: 100%;
+    }
+    .menu__bars{
+        font-size: 32px;
+    }
+}
 
 
 
@@ -59,8 +107,6 @@
     align-items: center;
 }
 .banner__text{
-    /* width: 60vw;
-    height: 15vw; */
     font-family: "Raleway-Medium";
     font-size: 6vw;
     color: #f2f2f2;
@@ -70,6 +116,24 @@
 .typewrite > .wrap { 
     border-right: 0.05em solid; 
     animation: caret 1s steps(1) infinite;
+}
+@media (max-width: 768px){
+    .banner__text{
+        width: 64vw;
+        height: 20vw;
+        font-size: 11.5vw;
+        display: block;
+    }
+}
+@media (max-width: 480px){
+    .banner{
+        height: calc(100vh - 72px);
+    }
+    .banner__text{
+        width: 80vw;
+        height: 35vw;
+        font-size: 14.3vw;
+    }
 }
 
 
@@ -95,6 +159,30 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 1024px){
+    
+}
+@media (max-width: 768px){
+    .caixa__box{
+        padding: 8vw 5vw 10vw;
+    }
+    .caixa__header{
+        background: linear-gradient(135deg,#0f0f0f 60%, #888 60%);
+    }
+    .caixa__title{
+        font-size: 32px;
+        margin: 0;
+    }
+}
+@media (max-width: 480px){
+    .caixa__header{
+        background: linear-gradient(135deg,#0f0f0f 70%, #888 70%);
+    }
+    .caixa__title{
+        font-size: 28px;
+        margin: 0;
+    }
 }
 
 
@@ -164,6 +252,50 @@
     color: #FFF;
     box-shadow: .1vw .3vw 0 #333438;
 }
+@media (max-width: 768px){
+    .validate{
+        padding: 8vw 5vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    .validate__box{
+        width: 70vw;
+        margin: 2.5vw;
+        padding: 5vw 5vw;
+    }
+    .validate__icon{
+        width: 45vw;
+        height: 45vw;
+        border: 7vw solid #8a8a8b;
+    }
+    .validate__icon .fas{
+        font-size: 22vw;
+    }
+    .validate__title{
+        margin: 3vw 0;
+        font-size: 8vw;
+    }
+    .validate__text{
+        font-size: 4vw;
+    }
+    .validate__button{
+        margin: 4vw 0;
+        padding: 2vw 4vw;
+        font-size: 3vw;
+        box-shadow: .5vw 1.3vw 0 #656568;
+    }
+    .validate__button:hover{
+        
+        box-shadow: .5vw 1.3vw 0 #333438;
+    }
+}
+@media (max-width: 480px){
+    .validate__box{
+        width: 80vw;
+        margin: 2.5vw;
+        padding: 5vw 5vw;
+    }
+}
 
 
 
@@ -180,6 +312,28 @@
     font-family: "Raleway-Light";
     font-size: 2.2vw;
     text-align: center;
+}
+@media (max-width: 768px){
+    .about__video{
+        width: 80vw;
+        height: 45vw;
+        margin-bottom: 8vw;
+    }
+    .about__text{
+        margin-bottom: 5vw;
+        font-size: 3.5vw;
+    }
+}
+@media (max-width: 480px){
+    .about__video{
+        width: 90vw;
+        height: 50.625vw;
+        margin-bottom: 10vw;
+    }
+    .about__text{
+        margin-bottom: 6vw;
+        font-size: 4.2vw;
+    }
 }
 
 /* NOSSA EQUIPE */
@@ -208,7 +362,29 @@
     font-size: 1.2vw;
     text-align: center;
 }
-
+@media (max-width: 768px){
+    .team__box{
+        width: 65vw;
+        margin: 5vw;
+    }
+    .team__title{
+        margin: 2.5vw 0;
+        font-size: 6vw;
+    }
+    .team__subtitle{
+        font-size: 4vw;
+    }
+    .team__text{
+        margin: 3vw 0;
+        font-size: 3.5vw;
+    }
+}
+@media (max-width: 480px){
+    .team__box{
+        width: 80vw;
+        margin: 5vw;
+    }
+}
 
 
 /* NOSSOS CLIENTES */
@@ -228,13 +404,60 @@
     width: 100%;
     height: 100%;
 }
+@media (max-width: 768px){
+    .client{
+        width: 30vw;
+        height: 30vw;
+        margin: 5vw;
+    }
+    .client--large{
+        width: 45vw;
+    }
+    .client--medium{
+        width: 30vw;
+        height: 45vw;
+    }
+}
 
 
+/* FOOTER */
+.footer{
+    position: relative;
+    padding: 24px 3vw;
+    background: #000;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__text{
+    font-size: 20px;
+    color: #c8c8c8;
+}
+.social{
+    font-size: 28px;
+    color: #c8c8c8;
+    margin: 0 8px;
+    transition: all .5s;
+}
+.social:hover{
+    color: #FFF;    
+}
+@media (max-width: 768px){
+    .footer__text{
+        font-size: 16px;
+    }
+    .social{
+        font-size: 22px;
+    }
+}
+
+
+
+/* MODAL */
 .modal .modal-dialog { 
     width: 55vw; 
-    max-width: 55vw;
 } 
-
 .modal__services{
     display: flex;
     justify-content: center;
@@ -269,29 +492,14 @@
     display: flex;
     justify-content: center;
 }
-
-
-.footer{
-    position: relative;
-    padding: 24px 3vw;
-    background: #000;
-    z-index: 50;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media (max-width: 768px){
+    .modal .modal-dialog { 
+        width: 90vw; 
+        margin: 5vw auto;
+    } 
 }
-.footer__text{
-    font-size: 20px;
-    color: #c8c8c8;
-}
-.social{
-    font-size: 28px;
-    color: #c8c8c8;
-    margin: 0 8px;
-}
-.social:hover{
-    font-weight: bolder;
-    color: #FFF;
+@media (max-width: 480px){
+    
 }
 
 
@@ -336,4 +544,44 @@
     padding: 12px;
     font-family: "Raleway-Light";
     font-size: 1vw;
+}
+@media (max-width: 768px){
+    .form__box{
+        width: 80vw;
+        padding: 5vw;
+    }
+    .form__title{
+        margin-bottom: 4vw;
+        font-size: 6vw;
+    }
+    .form__label{
+        margin: 1vw 0;
+        font-size: 3.8vw;
+    }
+    .form__required{
+        font-size: 8vw;
+        line-height: 0;
+        position: relative;
+        top: 1vw;
+    }
+    .form__input{
+        margin-bottom: 1.5vw;
+        padding: 12px;
+        font-size: 3vw;
+    }
+}
+@media (max-width: 480px){
+    .form__box{
+        width: 90vw;
+    }
+    .form__title{
+        margin-bottom: 6vw;
+        font-size: 8vw;
+    }
+    .form__label{
+        font-size: 5.5vw;
+    }
+    .form__input{
+        font-size: 4vw;
+    }
 }
