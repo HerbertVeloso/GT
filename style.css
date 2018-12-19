@@ -144,24 +144,21 @@
 }
 .caixa__header{
     position: relative;
-    padding: 20px 3vw;
+    padding: 12px 3vw;
     background: linear-gradient(135deg,#0f0f0f 50%, #888 50%);
     z-index: 50;
 }
 .caixa__title{
     font-family: "Raleway-Medium";
     color: #f2f2f2;
-    font-size: 48px;
+    font-size: 32px;
 }
 .caixa__box{
-    padding: 5vw 5vw 8vw;
+    padding: 3vw 5vw 8vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-}
-@media (max-width: 1024px){
-    
+    align-items: flex-start;
 }
 @media (max-width: 768px){
     .caixa__box{
@@ -189,14 +186,14 @@
 
 /* VALIDE SEU JOGO */
 .validate{
-    padding: 3vw 5vw;
+    padding: 0 5vw 3vw;
     display: flex;
     justify-content: center;
 }
 .validate__box{
-    width: 33vw;
-    margin: 5vw;
-    padding: 3vw 5vw;
+    width: 35vw;
+    margin: 3vw 5vw 5vw;
+    padding: 2vw 3vw;
     background: rgba(0, 0, 0, .3);
     display: flex;
     flex-direction: column;
@@ -209,33 +206,34 @@
     align-items: center;
 }
 .validate__icon{
-    width: 20vw;
-    height: 20vw;
+    width: 14vw;
+    height: 14vw;
     background: #a8a8a8;
-    border: 2.5vw solid #8a8a8b;
+    border: 2vw solid #8a8a8b;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .validate__icon .fas{
-    font-size: 10vw;
+    font-size: 7vw;
     color: #234a71;
 }
 .validate__title{
-    margin: 1vw 0;
+    margin: .8vw 0;
     font-family: "Raleway-Medium";
     font-size: 2.5vw;
     color: #333438;
 }
 .validate__text{
     font-family: "Raleway-Light";
-    font-size: 1.5vw;
+    font-size: 1.35vw;
     color: #333438;
     text-align: center;
+    margin: 0;
 }
 .validate__button{
-    margin: 1vw 0;
+    margin: 2vw 0 0;
     padding: 1vw 2vw;
     background: #333438;
     color: #FFF;
@@ -303,14 +301,14 @@
 
  /* QUEM SOMOS */
 .about__video{
-    width: 70vw;
-    height: 39.375vw;
-    margin-bottom: 5vw;
+    width: 60vw;
+    height: 33.75vw;
+    margin-bottom: 3vw;
 }
 .about__text{
-    margin-bottom: 2.5vw;
+    margin: 0 3vw 2.5vw;
     font-family: "Raleway-Light";
-    font-size: 2.2vw;
+    font-size: 1.8vw;
     text-align: center;
 }
 @media (max-width: 768px){
@@ -338,7 +336,7 @@
 
 /* NOSSA EQUIPE */
 .team__box{
-    width: 22vw;
+    width: 23vw;
     margin: 3vw;
     display: flex;
     flex-direction: column;
@@ -358,7 +356,7 @@
     font-size: 1.5vw;
 }
 .team__text{
-    margin: 1vw 0;
+    margin: 1vw 0 0;
     font-size: 1.2vw;
     text-align: center;
 }
