@@ -387,16 +387,17 @@
 
 /* NOSSOS CLIENTES */
 .client{
-    width: 18vw;
-    height: 18vw;
-    margin: 3.5vw;
+    width: 14vw;
+    height: 14vw;
+    margin: 2.5vw 5vw;
 }
 .client--large{
-    width: 25vw;
+    width: 21vw;
 }
 .client--medium{
-    width: 15vw;
-    height: 20vw;
+    width: 9.5vw;
+    height: 14vw;
+    margin: 2.5vw 11vw;
 }
 .client img{
     width: 100%;
@@ -455,6 +456,7 @@
 /* MODAL */
 .modal .modal-dialog { 
     width: 55vw; 
+    max-width: 55vw; 
 } 
 .modal__services{
     display: flex;
@@ -462,20 +464,9 @@
     align-items: center;
 }
 .modal__service{
-    position: relative;
-    width: 10vw;
-    height: 10vw;
-    margin: 0 2vw;
-    padding: 1vw;
-    background: #333438;
+    margin: 2vw;
+    font-size: 1.5vw;
     color: #FFF !important;
-    font-family: "Raleway-Medium";
-    font-size: 2.5vw;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    box-shadow: .1vw .3vw 0 #656568;
-    transition: .5s all;
 }
 .modal__service:hover{
     background: #656568;
@@ -506,7 +497,7 @@
 /* FORM */
 .form__box{
     width: 70vw;
-    padding: 5vw;
+    padding: 3vw 5vw 5vw;
     display: flex;
     flex-direction: column;
     background: rgba(0, 0, 0, .3);
