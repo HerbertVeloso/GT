@@ -7,7 +7,7 @@
 }
 
 .mask{
-    background: url(assets/background.png);
+    background: url(assets/bg.png);
     background-size: cover;
     position: absolute;
     top: 0;
@@ -100,7 +100,7 @@
 /* BANNER */
 .banner{
     height: calc(100vh - 80px);
-    background: url(assets/banner.png) center no-repeat;
+    background: url(assets/banner.png) center;
     background-size: cover; 
     display: flex;
     justify-content: center;
@@ -139,7 +139,7 @@
 
 /* SECTIONS GERAIS */
 .caixa{
-    background: url(assets/background.png);
+    background: url(assets/bg.png);
     background-size: cover;
 }
 .caixa__header{
