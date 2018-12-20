@@ -253,45 +253,66 @@
 @media (max-width: 768px){
     .validate{
         padding: 8vw 5vw;
+    }
+    .validate__box{
+        width: 40vw;
+        margin: 2.5vw;
+        padding: 5vw 5vw;
+    }
+    .validate__icon{
+        width: 25vw;
+        height: 25vw;
+        border: 4vw solid #8a8a8b;
+    }
+    .validate__icon .fas{
+        font-size: 12vw;
+    }
+    .validate__title{
+        margin: 2vw 0;
+        font-size: 5vw;
+    }
+    .validate__text{
+        font-size: 2.5vw;
+    }
+    .validate__button{
+        margin: 3vw 0;
+        padding: 2vw 4vw;
+        font-size: 2vw;
+        box-shadow: .5vw 1.3vw 0 #656568;
+    }
+    .validate__button:hover{
+        box-shadow: .5vw 1.3vw 0 #333438;
+    }
+}
+@media (max-width: 480px){
+    .validate{
+        padding: 4vw 5vw 8vw;
         flex-direction: column;
         align-items: center;
     }
     .validate__box{
         width: 70vw;
-        margin: 2.5vw;
-        padding: 5vw 5vw;
+        margin: 4vw;
     }
     .validate__icon{
-        width: 45vw;
-        height: 45vw;
-        border: 7vw solid #8a8a8b;
+        width: 35vw;
+        height: 35vw;
+        border: 6vw solid #8a8a8b;
     }
     .validate__icon .fas{
-        font-size: 22vw;
+        font-size: 16vw;
     }
     .validate__title{
-        margin: 3vw 0;
-        font-size: 8vw;
+        margin: 2vw 0;
+        font-size: 7vw;
     }
     .validate__text{
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     .validate__button{
-        margin: 4vw 0;
+        margin: 6vw 0;
         padding: 2vw 4vw;
         font-size: 3vw;
-        box-shadow: .5vw 1.3vw 0 #656568;
-    }
-    .validate__button:hover{
-        
-        box-shadow: .5vw 1.3vw 0 #333438;
-    }
-}
-@media (max-width: 480px){
-    .validate__box{
-        width: 80vw;
-        margin: 2.5vw;
-        padding: 5vw 5vw;
     }
 }
 
@@ -362,25 +383,36 @@
 }
 @media (max-width: 768px){
     .team__box{
-        width: 65vw;
-        margin: 5vw;
+        width: 38vw;
+        margin: 3.5vw;
     }
     .team__title{
         margin: 2.5vw 0;
-        font-size: 6vw;
+        font-size: 4.5vw;
     }
     .team__subtitle{
-        font-size: 4vw;
+        font-size: 3.4vw;
     }
     .team__text{
         margin: 3vw 0;
-        font-size: 3.5vw;
+        font-size: 2.55vw;
     }
 }
 @media (max-width: 480px){
     .team__box{
-        width: 80vw;
+        width: 70vw;
         margin: 5vw;
+    }
+    .team__title{
+        margin: 2vw 0;
+        font-size: 7vw;
+    }
+    .team__subtitle{
+        font-size: 5vw;
+    }
+    .team__text{
+        margin: 2vw 0;
+        font-size: 4vw;
     }
 }
 
@@ -411,10 +443,12 @@
     }
     .client--large{
         width: 45vw;
+        margin: 5vw 2vw;
     }
     .client--medium{
-        width: 30vw;
-        height: 45vw;
+        width: 20.35vw;
+        height: 30vw;
+        margin: 5vw 12vw 5vw 6vw;
     }
 }
 
@@ -483,12 +517,24 @@
 }
 @media (max-width: 768px){
     .modal .modal-dialog { 
-        width: 90vw; 
+        width: 80vw;
+        max-width: 80vw; 
         margin: 5vw auto;
     } 
+    .modal__service{
+        margin: 2.5vw;
+        font-size: 2.5vw;
+    }
 }
 @media (max-width: 480px){
-    
+    .modal .modal-dialog { 
+        width: 90vw;
+        max-width: 90vw; 
+    } 
+    .modal__service{
+        margin: 3vw;
+        font-size: 4vw;
+    }
 }
 
 
